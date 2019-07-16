@@ -1,0 +1,56 @@
+scan x[3,3]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+scan y[1,3]
+10
+11
+12
+scan inv[2,2]
+2
+1
+1
+1
+scan swap[2,3]
+5
+4
+3
+2
+1
+0
+print x
+merge x y
+merge y x
+merge -v x y
+merge -v y x
+transpose y
+merge -h x y
+merge -h y x
+merge x y
+merge y x
+transpose y
+z = merge -h y y
+z = merge z y
+p z
+z * y
+z = x * z
+gem -v x
+z = gem x
+inverse x
+inverse inv
+i = inverse inv
+i * inv
+rank x
+split x[2,2](1,2)
+split x[2,2](1,1)
+splitted=split x[2,2](1,1)
+gem -v splitted
+determinant splitted
+gem -v swap
+
